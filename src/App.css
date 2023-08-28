@@ -1,32 +1,29 @@
+
 body{
-  height: 100vh;
-  width: 100vw;
+margin:0px;
+padding: 0px;
+width: 90%;
+margin: auto;
 }
-
-.app{
-  width: fit-content;
-  margin: auto;
-}
-.mumbai{
+.carosoul{
   display: flex;
-  gap: 20px;
-  margin: 30px 80px;
+}
+.mumbaicss{
+ margin-top: 20px;
+}
+.punecss{
+  display: flex;
+  gap : 30px;
 
 }
-
+ 
 button{
-  padding: 40px 20px;
+width: 80px;
+height: 300px;
   background-color: aqua;
 }
-.xyzcss{
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  margin: auto;
-}
-.discription{
-  width: 500px;
-}
+
+
 p{
   font-size: 20px;
   color: rgb(211, 85, 85);

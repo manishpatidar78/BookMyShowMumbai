@@ -4,6 +4,7 @@ import './App.css';
 import Pune from './Pune';
 import Mumbai from './Components/Mumbai';
 import Xyz from './Components/Xyz'
+import Activities from './Components/Activities';
 
 
 
@@ -51,35 +52,36 @@ function App (){
   return (
 
     <>
-     <div className='app'>
-      <div style={{display: "flex"}}>
-      <button onClick={() => {setImgNo(imgNo - 1)}}>Prev</button>
-      <img src={couraselImgs[imgNo]} alt="" />
-      <button onClick={() => {setImgNo(imgNo + 1)}}>Next</button>
-      </div>
-    </div>
-    
-      <div className='mumbai'>
-        <div>
+     <div className='carosoul'>
+         <div>
+           <button onClick={() => {setImgNo(imgNo - 1)}}>Prev</button>
+         
+         </div>
+          <div><img src={couraselImgs[imgNo]} alt="" /></div> 
+          <div><button onClick={() => {setImgNo(imgNo + 1)}}>Next</button></div> 
+      <div className='punecss'>
+     </div>     
+       <div className='mumbaicss'>
         <Mumbai ></Mumbai>
-        </div>
-      </div>
+       </div>
+       </div>     
+       <div className='mumbaicss'>
+        <Stream ></Stream>
+       </div>
       
-      <div style={{display: "flex", gap: "20px", margin: "30px 80px"}}>
         {
           pune.map((x) => {
             return <Pune imgLink={x.image} cName={x.moviename}></Pune>
           })
-        }
-        
+        } 
       </div> 
- <div className='xyzcss'>
-   <Xyz></Xyz>
- </div>
-  
-
-
-      </>
+      <div>
+           <Xyz />
+      </div>
+      <div>
+        <Activities />
+      </div>
+    </>
     
   )
   

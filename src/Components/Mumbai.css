@@ -1,11 +1,30 @@
-.imgMumbai{
-width: 300px;
-border-radius: 10px;
-display: flex;
-flex-direction: row;
-margin-top: 10px;
+.allmumbai {
+     width: 90%;
+     margin: auto;
+     display: flex;
+     gap: 30px;
+     flex-wrap: wrap;
 }
-.Mh3{
-     width: 300px;
-     
+
+.imgMumbai {
+     width: 200px;
+     border-radius: 17px;
+     cursor: pointer;
+}
+
+.movieName {
+     font-size: 20px;
+     width: 190px;
+     margin-top: 9px;
+     margin-bottom: 5px;
+     cursor: pointer;
+}
+
+.paralanguage {
+     width: 190px;
+     font-size: 15px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     color: #000;
+
 }

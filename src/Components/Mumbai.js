@@ -1,4 +1,4 @@
-import './Mumbai.css'
+import "./Mumbai.css";
 
 const mumbaiMovies = [
   {
@@ -125,7 +125,7 @@ const mumbaiMovies = [
       "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-Mi44SyBMaWtlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00364394-ebvyxelrsa-portrait.jpg",
     movieName: "Barbie",
     Tag: "UA",
-    language:"English",
+    language: "English",
   },
   {
     movieimgLink:
@@ -158,7 +158,7 @@ const mumbaiMovies = [
   {
     movieimgLink:
       "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4xLzEwICAxMTkuNksgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-gdlsqkwwld-portrait.jpg",
-    movieName: "Mission Impossible: Dead Reckoning Part One",
+    movieName: "Mission Impossible: Dead Reckoning Part",
     Tag: "UA",
     language: "English.Hindi,Tamil,Telugu",
   },
@@ -227,23 +227,23 @@ const mumbaiMovies = [
   },
 ];
 
-function Mumbai(){
-     return(
-          <div>
-               {mumbaiMovies.map((y) =>{
-                    return(
-                        <div>
-                         <div >
-                              <img className='imgMumbai' src={y.movieimgLink} alt="" />
-                              <h3 className='Mh3'>{y.movieName}</h3>
-                              <p>{y.Tag}</p>
-                              <p>{y.language}</p>
-                          </div>
-                          </div>
-                    )
-
-               })}
-          </div>
-     );
+function Mumbai() {
+  return (
+    <div className="allmumbai">
+      {mumbaiMovies.map((y) => {
+        return (
+          // <div className="allmumbai">
+            <div>
+              <img className="imgMumbai" src={y.movieimgLink} alt="" />
+              <h3 className="movieName">{y.movieName}</h3>
+              <p className="paralanguage">{y.Tag}</p><br />
+              <p className="paralanguage">{y.language}</p>
+            </div> 
+          // </div>
+        );
+      })}
+      </div>
+  
+  );
 }
 export default Mumbai;

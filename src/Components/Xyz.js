@@ -1,4 +1,4 @@
-    import './Xyz.css'
+    import './Xyz.css';
     
     
     const allxyz = {
@@ -563,26 +563,45 @@
 
    function  Xyz(){
     return(
-      <div>
-
-
-     {
-    allxyz.products.map((z)=>{
-
-     return <>
-       <img className="imgcss" src={z.images[0]} alt="" />
-        <p>Id: {z.id}</p>
-        <p>Title : {z.title}</p>
-        <p className="discription"> Discription : {z.description}</p>
-        <p> Price : {z.price}</p>
-        <p> Dis.Price: {z.discountPercentage}</p>
-        <p>Brand : {z.brand}</p>
-        <p>Rating : {z.rating}</p>
-        <p>Category : {z.category}</p>     
       
-      </>
-    })
-  }
+      
+      <div className='maindiv'>
+       {
+        allxyz.products.map((z)=>{
+
+       return (
+       <div> 
+        <div>
+          <img className="images" src={z.images[0]} alt="" />
+        </div>
+        <div>
+          <p>Id: {z.id}</p>
+          </div>
+        <div>
+          <p className="discription">Title : {z.title}</p>
+          </div>
+        <div>
+          <p className="discription"> Discription : {z.description}</p>
+          </div>
+        <div>
+          <p> Price : {z.price}</p>
+          </div>
+        <div><p> Dis.Price: {z.discountPercentage}</p>
+        </div>
+        <div>
+          <p>Brand : {z.brand}</p>
+          </div>
+        <div>
+          <p>Rating : {z.rating}</p>
+          </div>
+        <div>
+          <p>Category : {z.category}</p> 
+          </div>    
+      
+      </div>
+        )
+        })
+       }
      </div>
     )
    }

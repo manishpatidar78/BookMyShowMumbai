@@ -1,0 +1,8 @@
+
+
+.puneImages{
+     display: flex;
+     flex-direction: column;
+     width: 200px;
+     border-radius: 20px;
+}
